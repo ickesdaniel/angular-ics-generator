@@ -28,5 +28,9 @@
   },
   "description": "A simple library to create and download a basic .ics file from an Angular application.",
   "author": "Daniel Ickes",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ickesdaniel/angular-ics-generator.git"
+  }
 }

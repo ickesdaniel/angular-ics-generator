@@ -1,6 +1,6 @@
 {
   "name": "angular-ics-generator",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -20,5 +20,9 @@
   },
   "dependencies": {
     "tslib": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ickesdaniel/angular-ics-generator.git"
   }
 }
