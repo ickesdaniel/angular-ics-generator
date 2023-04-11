@@ -1,28 +1,19 @@
 {
   "name": "angular-ics-generator",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "pack": "ng-packagr -p projects/angular-ics-generator/ng-package.json"
   },
-  "private": true,
   "dependencies": {
-    "@angular/animations": "^14.0.0",
-    "@angular/common": "^14.0.0",
-    "@angular/compiler": "^14.0.0",
-    "@angular/core": "^14.0.0",
-    "@angular/forms": "^14.0.0",
-    "@angular/platform-browser": "^14.0.0",
-    "@angular/platform-browser-dynamic": "^14.0.0",
-    "@angular/router": "^14.0.0",
-    "rxjs": "~7.5.0",
-    "tslib": "^2.3.0",
-    "zone.js": "~0.11.4"
+    "@angular/core": "^13.0.0"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "^14.2.10",
     "@angular/cli": "~14.2.1",
     "@angular/compiler-cli": "^14.0.0",
     "@types/jasmine": "~4.0.0",
@@ -32,6 +23,10 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
+    "ng-packagr": "^14.2.0",
     "typescript": "~4.7.2"
-  }
+  },
+  "description": "A simple library to create and download a basic .ics file from an Angular application.",
+  "author": "Daniel Ickes",
+  "license": "MIT"
 }

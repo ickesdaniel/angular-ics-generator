@@ -3,5 +3,38 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "angular-ics-generator": {
+      "projectType": "library",
+      "root": "projects/angular-ics-generator",
+      "sourceRoot": "projects/angular-ics-generator/src",
+      "prefix": "lib",
+      
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/angular-ics-generator/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/angular-ics-generator/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/angular-ics-generator/tsconfig.lib.json"
+            }
+          },
+          
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/angular-ics-generator/src/test.ts",
+            "tsConfig": "projects/angular-ics-generator/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-ics-generator/karma.conf.js"
+          }
+        }
+      }
+    }
   }
 }

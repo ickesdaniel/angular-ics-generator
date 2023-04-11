@@ -1,0 +1,24 @@
+{
+  "name": "angular-ics-generator",
+  "version": "1.0.5",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "pack": "ng-packagr -p ng-package.json"
+  },
+  "description": "A simple library to create and download a basic .ics file from an Angular application.",
+  "author": "Daniel Ickes",
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "@angular/common": "^13.0.0",
+    "@angular/core": "^13.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
