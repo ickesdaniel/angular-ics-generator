@@ -1,36 +1,36 @@
 {
-  "name": "angular-ics-generator",
-  "version": "1.0.7",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "pack": "ng-packagr -p projects/angular-ics-generator/ng-package.json"
-  },
-  "dependencies": {
-    "@angular/core": "^14.0.0"
-  },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "^14.0.0",
-    "@angular/cli": "^14.0.0",
-    "@angular/compiler-cli": "^14.0.0",
-    "@types/jasmine": "~4.0.0",
-    "jasmine-core": "~4.3.0",
-    "karma": "~6.4.0",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage": "~2.2.0",
-    "karma-jasmine": "~5.1.0",
-    "karma-jasmine-html-reporter": "~2.0.0",
-    "ng-packagr": "^14.0.0",
-    "typescript": "~4.7.2"
-  },
-  "description": "A simple library to create and download a basic .ics file from an Angular application.",
-  "author": "Daniel Ickes",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ickesdaniel/angular-ics-generator.git"
-  }
+    "name": "angular-ics-generator",
+    "version": "1.0.7",
+    "scripts": {
+        "ng": "ng",
+        "start": "ng serve",
+        "build": "ng build",
+        "watch": "ng build --watch --configuration development",
+        "test": "ng test",
+        "pack": "ng-packagr -p ng-package.json"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+        "@angular-devkit/build-angular": "^14.0.0",
+        "@angular/cli": "^14.2.12",
+        "@angular/compiler-cli": "^14.0.0",
+        "@angular/compiler": "^14.0.0",
+        "@types/jasmine": "~4.0.0",
+        "jasmine-core": "~4.3.0",
+        "karma": "~6.4.0",
+        "karma-chrome-launcher": "~3.1.0",
+        "karma-coverage": "~2.2.0",
+        "karma-jasmine": "~5.1.0",
+        "karma-jasmine-html-reporter": "~2.0.0",
+        "ng-packagr": "^14.0.0",
+        "typescript": "~4.7.2"
+    },
+    "description": "A simple library to create and download a basic .ics file from an Angular application.",
+    "author": "Daniel Ickes",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ickesdaniel/angular-ics-generator.git"
+    }
 }
