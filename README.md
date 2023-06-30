@@ -6,6 +6,12 @@ A simple library to create and download a basic .ics file from an Angular applic
 
 `npm install angular-ics-generator`
 
+Use versions as following 
+1.0.6 for Angular 13
+1.0.7 for Angular 14
+1.0.8 for Angular 15
+1.0.9 for Angular 16
+
 ## Using
 
 Import the generator service:
