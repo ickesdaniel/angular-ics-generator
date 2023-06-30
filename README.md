@@ -29,3 +29,7 @@ this._icsService.DownloadIcs(startDate,
 ```
 
 This will generate and download the .ics file. All the user will need to do is open the file and save the event in any calendar app supporting this format
+
+## License
+
+MIT
