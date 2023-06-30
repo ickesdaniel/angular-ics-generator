@@ -5,22 +5,22 @@
   "projects": {
     "angular-ics-generator": {
       "projectType": "library",
-      "root": "projects/angular-ics-generator",
-      "sourceRoot": "projects/angular-ics-generator/src",
+      "root": "/",
+      "sourceRoot": "/src",
       "prefix": "lib",
       
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/angular-ics-generator/ng-package.json"
+            "project": "ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/angular-ics-generator/tsconfig.lib.prod.json"
+              "tsConfig": "tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/angular-ics-generator/tsconfig.lib.json"
+              "tsConfig": "tsconfig.lib.json"
             }
           },
           
