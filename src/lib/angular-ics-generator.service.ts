@@ -8,7 +8,9 @@ export class AngularIcsGeneratorService {
   constructor() { }
   // tslint:disable-next-line: max-line-length
   public downloadIcs(start: Date, end: Date, title: string, description: string, url: string, location: string, organization?: string, locale?: string, reminderMinutes?: string) {
-    const ics = this.generateIcs(start.toString(), end.toString(), title, description, url, location, organization || 'default', locale || 'EN', reminderMinutes);
+    const startDate = start.toISOString().replace('-', '').replace(':', '').split('.')[0];
+    const endDate = end.toISOString().replace('-', '').replace(':', '').split('.')[0];
+    const ics = this.generateIcs(startDate, endDate, title, description, url, location, organization || 'default', locale || 'EN', reminderMinutes);
     const element = document.createElement('a');
     element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(ics));
     element.setAttribute('download', `${title}.ics`);
@@ -20,7 +22,7 @@ export class AngularIcsGeneratorService {
   // tslint:disable-next-line: max-line-length
   private generateIcs(start: string, end: string, title: string, description: string, url: string, location: string, organization: string, locale: string, reminderMinutes?: string) {
     const timeStamp = new Date().toISOString();
-    const uuid = `${timeStamp}Z-uid@${organization}`;
+    const uuid = `${timeStamp}-uid@${organization}`;
 
     // Don't ever format this string template
     const event = `BEGIN:VCALENDAR
@@ -31,7 +33,7 @@ DTSTAMP:${timeStamp}Z
 DTSTART:${start}
 DTEND:${end}
 SUMMARY:${title}
-DESCRIPTION:${description}${!!url ? (' \\nURL: ' + url) : ''}
+DESCRIPTION:${description}${!!url ? (' URL: ' + url) : ''}
 URL:${url}
 LOCATION:${location}
 UID:${uuid}
