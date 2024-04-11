@@ -1,6 +1,6 @@
 {
   "name": "angular-ics-generator",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
